@@ -26,11 +26,11 @@ function TopBar(props) {
 				</div>
 			</div>
 			<div className={Styles.rigthSide}>
+				<Icon className={Styles.logOut} name="shopping basket" size={"large"}></Icon>
 				<Header className={Styles.username} as="h4">
 					usuario
 				</Header>
 				<Button className={Styles.avatar} circular basic icon={"user"}></Button>
-				<Icon className={Styles.logOut} name="log out" size={"large"}></Icon>
 			</div>
 		</div>
 	);

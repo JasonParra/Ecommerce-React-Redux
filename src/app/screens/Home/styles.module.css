@@ -7,5 +7,41 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap !important;
-	align-items: flex-end;
+	align-items: flex-start;
+}
+
+.productsContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.productCard {
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.productCard {
+		margin: 1% !important;
+	}
+	.products {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap !important;
+		align-items: flex-end;
+	}
+	.productsContainer {
+		display: flex;
+		justify-content: center;
+		padding: 0px 0px 0px 220px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.productsContainer {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px !important;
+	}
 }

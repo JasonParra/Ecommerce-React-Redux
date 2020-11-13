@@ -18,10 +18,16 @@ function Home(props) {
 				<Sticky context={contextRef}>
 					<TopBar></TopBar>
 				</Sticky>
-				<div className={Styles.products}>
-					{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => {
-						return <ProductCard></ProductCard>;
-					})}
+				<div className={Styles.productsContainer}>
+					<div className={Styles.products}>
+						{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => {
+							return (
+								<div className={Styles.productCard}>
+									<ProductCard></ProductCard>
+								</div>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 		</div>
